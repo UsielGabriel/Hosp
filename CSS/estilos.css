@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    color: #fff;
 }
 
 html{
@@ -97,7 +98,7 @@ body{
 
 .boton a{
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #000;
+    color: #fff;
     border-radius: 5px;
     padding: 10px;  
     text-decoration: none;
@@ -111,7 +112,8 @@ body{
 }
 
 .formulario-bottom p, .formulario-top p{
-    margin-top: 1.7rem;
+    /* margin-top: 1.7rem; */
+    margin-top: 25px;
 
 }
 
@@ -127,6 +129,15 @@ body{
 }
 
 .formulario-bottom input:hover, .formulario-top input:hover{
+    margin: 1rem;
+    margin-left: -3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;  
+}
+
+.formulario-bottom input:focus, .formulario-top input:focus{
     margin: 1rem;
     margin-left: -3rem;
     background-color: rgba(255, 255, 255, 0.2);
