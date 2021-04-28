@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo/negroes.png">
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
     <title>Hosp</title>
 </head>
 <body>
     <div class="contenedor-cabeza">
         <div class="cabeza-top">
+            <img src="img/logo/blancoes.png" alt="Logotipo">
             <h1>Hosp</h1>
         </div>
     </div>
@@ -24,26 +25,31 @@
             <form class="formulario" method="get" name="formulario" action="iniciosesion.html">
                 <div class="formulario-top">
                     <div>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Id:</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Id:</p>
                     </div>  
                     <div>
-                        <input type="text" placeholder="Ingrese Id" class="inputs">
-                    </div>                  
-                    <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Id:</p><input type="text" placeholder="Ingrese Id" class="inputs">                    -->
+                        <input type="text" placeholder="Ingrese Id"  name="id"
+                        onkeypress="return validar(event)"class="inputs">
+                    </div>                                      
                 </div>
                 <div class="formulario-bottom">
                     <div>
                         <p>Contraseña:</p>
                     </div>
                     <div>
-                        <input type="text" placeholder="Ingrese Contraseña" class="inputs">
+                        <input type="text" placeholder="Ingrese Contraseña"  name="contraseña"
+                        onkeypress="return validar(event)"class="inputs">
+                    </div>                    
+                </div>
+                <div class="boton">
+                    <div class="btn">
+                        <input type="button" value="Ingresar" onclick="ingresar()" >
                     </div>
-                    <!-- <p>Contraseña:</p><input type="text" placeholder="Ingrese Contraseña" class="inputs"> -->
+                    <div class="btn">
+                        <input type="button" value="Borrar" onclick="Borrar()" >
+                    </div>                                     
                 </div>
             </form>            
-        </div>
-        <div class="contenido boton">
-            <a href="#.html">Ingresar</a>
         </div>
     </div>
     <div class="contenedor-pie">
