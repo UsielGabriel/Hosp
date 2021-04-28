@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/negroes.png">
+    <link rel="stylesheet" href="  CSS/estilos-largos.css">
+    <link rel="stylesheet" href="CSS/salectbox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Hosp</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            <div class="imagen">
+                <img class="img" src="img/logo/blancoes.png" alt="Logotipo">
+            </div>
+            <div class="titulo">
+                <h1>Médico</h1>
+            </div> 
+            <div class="barras">
+                <input type="checkbox" id="hamburguesa">
+                <label for="hamburguesa" class=" label_menu menu_boton_bars">
+                    <span id="span_1"></span>
+                    <span id="span_2"></span>
+                    <span id="span_3"></span>  
+                </label>  
+            </div>                                             
+        </div>          
+    </div>
+    <div class="cabeza-bottom mostrar ">
+        <div class="menu">
+            <div>
+                <a class="boton-n">Registro</a><br>
+            </div>
+            <div>
+                <a href="#">Registro Médico del paciente</a><br>
+            </div>                
+            <div>
+                <a href="#">Actualizar Registro Médico del paciente</a><br>
+            </div>
+            <div>
+                <a href="#">Cerrar sesión</a><br>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <div class="contenido">
+            <h3>Registro Medico</h3>
+        </div>
+        <div class="contenido">
+            <form class="formulario" method="get" name="formulario" action="registrodeunmedico.html">
+                <div class="formulario-top">
+                    <div class="formulario-n">
+                        <div>
+                            <p>Nombre:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el nombre" class="inputs"  name="nombre"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Apellido Paterno:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el apellido" class="inputs"  name="apellidopa"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Apellido Materno:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el apellido" class="inputs"  name="apellidoma"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Fecha de nacimiento:</p>
+                        </div>  
+                        <div>
+                            <input type="date" class="inputs"  name="fechanac"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Fecha de ingreso a <br> laborar en el hospital:</p>
+                        </div>  
+                        <div>
+                            <input type="date" class="inputs"  name="fechaing"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Cedula:</p>
+                        </div>  
+                        <div>
+                            <input type="number" placeholder="Ingresa tu cedula" class="inputs"  name="cedula"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                </div>
+                <div class="formulario-bottom">
+                    <div class="formulario-n">
+                        <div>
+                            <p>Especialidad:</p>
+                        </div>  
+
+                        <!-- <div class="selectbox">
+                            <div class="selectbox">
+                                <div class="select" id="select">
+                                    <div class="contenido-select">
+                                        <h1 class="titulo">Selecciona tu especialidad</h1>
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="opciones" id="opciones">
+                                    <a href="#" class="opcion">
+                                        <div class="contenido-opcion">                                            
+                                            <div class="textos">
+                                                <p class="titulo">opcion-1</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="opcion">
+                                        <div class="contenido-opcion">                                            
+                                            <div class="textos">
+                                                <p class="titulo">opcion-2</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="opcion">
+                                        <div class="contenido-opcion">                                            
+                                            <div class="textos">
+                                                <p class="titulo">opcion-3</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="opcion">
+                                        <div class="contenido-opcion">                                            
+                                            <div class="textos">
+                                                <p class="titulo">opcion-4</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="opcion">
+                                        <div class="contenido-opcion">                                            
+                                            <div class="textos">
+                                                <p class="titulo">opcion-5</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="hidden" name="pais" id="inputSelect" value="">
+                            no me sale prro css de esta cosa :( 
+                        </div>--> 
+                        <div>
+                            <input type="text" placeholder="Ingresa tu especialidad" class="inputs"  name="especialidad"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Id asignado:</p>
+                        </div>  
+                        <div>
+                            <input type="number" placeholder="Ingerese el Id" class="inputs"  name="idasig"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                    
+                    <div class="formulario-n">
+                        <div>
+                            <p>Numero telefónico:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="xx-xxxx-xxxx" class="inputs"  name="numtel"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>             
+                    <div class="formulario-n">
+                        <div>
+                            <p>Correo electronico:</p>
+                        </div>  
+                        <div>
+                            <input type="email" placeholder="Ingrese su correo" class="inputs"  name="correo"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                            
+                    <div class="formulario-n">
+                        <div>
+                            <p>Direccion:</p>
+                        </div>  
+                        <div>
+                            <input type="ingrese su direccion" placeholder="Ingrese su Direccion" class="inputs"  name="direccion"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                </div>  
+                <div class="boton">
+                    <div>
+                        <input type="button" value="Registrar" onclick="registrar()" >
+                    </div>
+                    <div>
+                        <input type="button" value="Borrar" onclick="borrar()" >
+                    </div>
+                </div>               
+            </form>       
+        </div>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h3>El pie de pagina</h3>
+        </div>
+    </div> 
+    <script src="JS/menu.js"></script>   
+</body>
+</html>
