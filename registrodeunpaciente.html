@@ -38,7 +38,7 @@
             </div>
             <div>
                 <a href="registromedicopacientebuscar.html">Registro Medico del paciente</a><br>
-            </div>                
+            </div>             
             <div>
                 <a href="buscaractualizarpaciente.html">Actualizar Registro Médico del paciente</a><br>
             </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="contenedor-contenido">
         <div class="contenido">
-            <h3>Registro Medico</h3>
+            <h3>Registro de un paciente</h3>
         </div>
         <div class="contenido">
             <form class="formulario" method="get" name="formulario" action="registrodeunmedico.html">
@@ -92,19 +92,19 @@
                     </div>
                     <div class="formulario-n">
                         <div>
-                            <p>Fecha de ingreso a <br> laborar en el hospital:</p>
+                            <p>Grupo sanguíneo:</p>
                         </div>  
                         <div>
-                            <input type="date" class="inputs"  name="fechaing"
+                            <input type="text" placeholder="Ingrese su grupo sanguíneo" class="inputs"  name="tiposangre"
                             onkeypress="return validar(event)">
                         </div> 
                     </div>
                     <div class="formulario-n">
                         <div>
-                            <p>Cedula:</p>
+                            <p>Fecha del último examen físico:</p>
                         </div>  
                         <div>
-                            <input type="number" placeholder="Ingresa tu cedula" class="inputs"  name="cedula"
+                            <input type="date" class="inputs"  name="exfis"
                             onkeypress="return validar(event)">
                         </div> 
                     </div>
@@ -112,60 +112,8 @@
                 <div class="formulario-bottom">
                     <div class="formulario-n">
                         <div>
-                            <p>Especialidad:</p>
+                            <p>Últimas purebas de analisis de cribado:</p>
                         </div>  
-
-                        <!-- <div class="selectbox">
-                            <div class="selectbox">
-                                <div class="select" id="select">
-                                    <div class="contenido-select">
-                                        <h1 class="titulo">Selecciona tu especialidad</h1>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="opciones" id="opciones">
-                                    <a href="#" class="opcion">
-                                        <div class="contenido-opcion">                                            
-                                            <div class="textos">
-                                                <p class="titulo">opcion-1</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="opcion">
-                                        <div class="contenido-opcion">                                            
-                                            <div class="textos">
-                                                <p class="titulo">opcion-2</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="opcion">
-                                        <div class="contenido-opcion">                                            
-                                            <div class="textos">
-                                                <p class="titulo">opcion-3</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="opcion">
-                                        <div class="contenido-opcion">                                            
-                                            <div class="textos">
-                                                <p class="titulo">opcion-4</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="opcion">
-                                        <div class="contenido-opcion">                                            
-                                            <div class="textos">
-                                                <p class="titulo">opcion-5</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <input type="hidden" name="pais" id="inputSelect" value="">
-                            no me sale prro css de esta cosa :( 
-                        </div>--> 
                         <div>
                             <input type="text" placeholder="Ingresa tu especialidad" class="inputs"  name="especialidad"
                             onkeypress="return validar(event)">
@@ -173,25 +121,25 @@
                     </div>
                     <div class="formulario-n">
                         <div>
-                            <p>Id asignado:</p>
+                            <p>Principales enfermedades y ciruias que a tenido:</p>
                         </div>  
                         <div>
-                            <input type="number" placeholder="Ingerese el Id" class="inputs"  name="idasig"
+                            <input type="text" placeholder="Ingerese el Id" class="inputs"  name="idasig"
                             onkeypress="return validar(event)">
                         </div> 
                     </div>                    
                     <div class="formulario-n">
                         <div>
-                            <p>Numero telefónico:</p>
+                            <p>Fechas de las lesiones que ha sufrido:</p>
                         </div>  
                         <div>
-                            <input type="text" placeholder="xx-xxxx-xxxx" class="inputs"  name="numtel"
+                            <input type="date" placeholder="Lesiones" class="inputs"  name="lesiones"
                             onkeypress="return validar(event)">
                         </div> 
                     </div>             
                     <div class="formulario-n">
                         <div>
-                            <p>Correo electronico:</p>
+                            <p>Enfermedadespor las que:</p>
                         </div>  
                         <div>
                             <input type="email" placeholder="Ingrese su correo" class="inputs"  name="correo"

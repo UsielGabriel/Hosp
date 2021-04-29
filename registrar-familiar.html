@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/negroes.png">
+    <link rel="stylesheet" href="  CSS/estilos-largos.css">
+    <link rel="stylesheet" href="CSS/salectbox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Hosp</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            <div class="imagen">
+                <img class="img" src="img/logo/blancoes.png" alt="Logotipo">
+            </div>
+            <div class="titulo">
+                <h1>Paciente</h1>
+            </div> 
+            <div class="barras">
+                <input type="checkbox" id="hamburguesa">
+                <label for="hamburguesa" class=" label_menu menu_boton_bars">
+                    <span id="span_1"></span>
+                    <span id="span_2"></span>
+                    <span id="span_3"></span>  
+                </label>  
+            </div>                                             
+        </div>          
+    </div>
+    <div class="cabeza-bottom mostrar ">        
+        <div class="menu">
+            <div>
+                <a href="visualizar-registro-paciente.html">Visualizar registro</a><br>
+            </div>
+            <div>
+                <a class="boton-n" href="registrar-familiar.html">Registrar familiar</a><br>
+            </div>                
+            <div>
+                <a href="cerrar-sesion-paciente.html">Cerrar sesión</a><br>
+            </div> 
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <div class="contenido">
+            <h3>Registro Paciente</h3>
+        </div>
+        <div class="contenido">
+            <form class="formulario" method="get" name="formulario" action="registrodeunmedico.html">
+                <div class="formulario-top">
+                    <div class="formulario-n">
+                        <div>
+                            <p>Nombre:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el nombre" class="inputs"  name="nombre"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Apellido Paterno:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el apellido" class="inputs"  name="apellidopa"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Apellido Materno:</p>
+                        </div>  
+                        <div>
+                            <input type="text" placeholder="Ingrese el apellido" class="inputs"  name="apellidoma"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Correo electronico:</p>
+                        </div>  
+                        <div>
+                            <input type="text" class="inputs"  name="" placeholder="Ingrese el correo"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Parentesco:</p>
+                        </div>  
+                        <div>
+                            <input type="text" class="inputs"  name="" placeholder="Ingrese el parentesco"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Id:</p>
+                        </div>  
+                        <div>
+                            <input type="number" placeholder="Ingresa tu Id" class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="boton">
+                    <div>
+                        <input type="button" value="Registrar" onclick="registrar()" >
+                    </div>
+                    <div>
+                        <input type="button" value="Borrar" onclick="borrar()" >
+                    </div>
+                </div>               
+            </form>       
+        </div>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h3>El pie de pagina</h3>
+        </div>
+    </div> 
+    <script src="JS/menu.js"></script>   
+</body>
+</html>
