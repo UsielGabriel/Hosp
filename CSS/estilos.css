@@ -16,7 +16,7 @@ body{
     justify-content: space-between;
     height: 100%;
     background-image: url(../img/bgg.jpg);   
-    background-size: 100% 100%;
+    background-size: 180% 180%;
 }
 
 .contenedor-cabeza{
@@ -24,7 +24,6 @@ body{
     flex-wrap: wrap;
     background-color: black;
     color: #fff;
-    /* font-size: 1.3rem; */
     
 }
 
@@ -95,7 +94,6 @@ body{
     flex-wrap: wrap;
     background-color: black;
     color: #fff;
-    /* font-size: 1.3rem; */
 }
 
 .pie-top{
@@ -105,24 +103,6 @@ body{
     text-align: center;
 }
 
-/* .boton{
-    margin: auto;
-}
-
-.boton input{
-    margin-top: 5rem;
-
-}
-
-.boton:hover{
-    margin: auto;
-}
-
-.boton input:hover{
-    margin-top: 5rem;
-
-} */
-
 .boton{
     display: flex;
     width: 100%;
@@ -131,7 +111,6 @@ body{
 }
 
 .btn{
-    /* flex: 1; */
     margin-left: 2rem;
     margin-top: 5rem;
 }
@@ -154,49 +133,9 @@ body{
 }
 
 .formulario-bottom p, .formulario-top p{
-    /* margin-top: 1.7rem; */
     margin-top: 25px;
 
 }
-
-
-/* .formulario-bottom input, .formulario-top input{
-    margin: 1rem;
-    margin-left: -3rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #000;
-    border-radius: 5px;
-    padding: 10px;  
-    text-decoration: none;
-}
-
-.formulario-bottom input:hover, .formulario-top input:hover{
-    margin: 1rem;
-    margin-left: -3rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    padding: 10px;  
-}
-
-.formulario-bottom input:focus, .formulario-top input:focus{
-    margin: 1rem;
-    margin-left: -3rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #fff;
-    padding: 10px;  
-} */
-
-/* input{
-    margin: 1rem;
-    margin-left: -3rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #000;
-    border-radius: 5px;
-    padding: 10px;  
-    text-decoration: none;
-} */
 
 input:hover{
     margin: 1rem;
@@ -223,8 +162,3 @@ input{
     outline: none;
 
 }
-
-
-/* .boton a:focus{
-    text-decoration: none;
-}  */

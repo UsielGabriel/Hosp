@@ -21,14 +21,12 @@ body{
 
 .menu_boton_bars{
     margin: 10px;
-    /* display: flex; */
     
 }
 
 .label_menu{
     width: 50px;
     height: 30px;
-    /* position: relative; */
     cursor: pointer;
 }
 
@@ -124,7 +122,6 @@ body{
     flex-wrap: wrap;
     background-color: black;
     color: #fff;
-    /* font-size: 1.3rem; */
     
 }
 
@@ -135,7 +132,6 @@ body{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
 }
 
 .img{
@@ -163,9 +159,6 @@ body{
     margin: 3rem auto;
     padding: 3rem;
 
-    /* background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3); */
     border-radius: 5px; 
     
     
@@ -189,7 +182,6 @@ input.inputs:hover{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* border-color: #000; */
     box-shadow: 0 0 5px #fff;
 }
 
@@ -237,7 +229,6 @@ input.inputs:hover{
     border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
     color: #fff;
-    /* padding: 10px;   */
     cursor: pointer;
     outline: none;
     box-shadow: 0 0 5px #fff;
@@ -250,7 +241,6 @@ input.inputs:hover{
 
 .btn:hover{
     margin: 1rem;
-    /* margin-left: -3rem; */
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
@@ -262,7 +252,6 @@ input.inputs:hover{
 
 .btn{
     margin: 1rem;
-    /* margin-left: -3rem; */
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
