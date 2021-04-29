@@ -206,6 +206,8 @@ input:hover{
     color: #fff;
     padding: 10px;
     cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 5px #fff
 
 }
 
@@ -218,6 +220,7 @@ input{
     color: #fff;
     padding: 10px;
     cursor: pointer;
+    outline: none;
 
 }
 

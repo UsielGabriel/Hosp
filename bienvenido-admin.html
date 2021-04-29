@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/negroes.png">
+    <link rel="stylesheet" href="  CSS/bienvenido.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <title>Hosp</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            <div class="imagen">
+                <img class="img" src="img/logo/blancoes.png" alt="Logotipo">
+            </div>
+            <div class="titulo">
+                <h1>Administrador</h1>
+            </div> 
+            <div class="barras">
+                <input type="checkbox" id="hamburguesa">
+                <label for="hamburguesa" class=" label_menu menu_boton_bars">
+                    <span id="span_1"></span>
+                    <span id="span_2"></span>
+                    <span id="span_3"></span>  
+                </label>  
+            </div>                                             
+        </div>          
+    </div>
+    <div class="cabeza-bottom mostrar ">
+        <div class="menu">
+            <div>
+                <a href="buscar-medico.html">Medicos</a><br>
+            </div>
+            <div>
+                <a href="crear-cuenta.html">Crear cuenta</a><br>
+            </div>                
+            <div>
+                <a href="registrar-medico.html">Registrar Médico</a><br>
+            </div> 
+            <div>
+                <a href="cerrar-sesion-admin.html">Cerrar sesión</a><br>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <form class="formulario" method="send" name="formulario" action="problema3.html">
+            <div class="contenido">
+                <h2>Bienvenido</h2>
+            </div>
+            <div class="contenido">
+                <input  readonly placeholder="" type="text"  class="inputs"  name="nombrecompleto"
+                onkeypress="return validar(event)">
+            </div> 
+        </form>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h3>El pie de pagina</h3>
+        </div>
+    </div> 
+    <script src="JS/menu.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
@@ -154,11 +154,33 @@ body{
     flex: 1;
 }
 
+.buscar{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    /* flex: 1; */
+    /* text-align: center; */
+    margin-top: 2rem;
+    margin-left: 11rem;
+    margin-right: 4rem;
+    
+}
+
+.btn-buscar{
+    /* flex: 1; */
+    margin-top: 2rem;
+    margin-left: 11rem;
+    margin-left: 4rem;
+       
+}
+
 .contenedor-contenido{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
+    /* height: 100%; */
 
     margin: 3rem auto;
     padding: 3rem;
@@ -173,7 +195,29 @@ body{
 
 .formulario{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.formulario-top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.perfil-img{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 150px;
+}
+
+.imgperf{
+    width: 150px;
+    border: 1px solid #fff;
 }
 
 .formulario-n{
@@ -187,23 +231,14 @@ body{
     text-align: justify;
 }
 
-.formulario-top{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex: 1;
-    justify-content: space-between;
-    
-    
-}
 
-.formulario-bottom{
+/* .formulario-bottom{
     flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     
-}
+} */
 
 
 .contenido{
@@ -318,9 +353,63 @@ body{
     text-decoration: none;
 } */
 
-input:hover{
+
+.btn:hover{
     margin: 1rem;
+    margin-top: 6rem;
     /* margin-left: -3rem; */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;  
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.btn{
+    margin: 1rem;
+    margin-top: 6rem;
+    /* margin-left: -3rem; */
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.btn-2:hover{
+    margin: 1rem;
+    /* margin-left: 3rem; */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;  
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.btn-2{
+    margin: 1rem;
+    /* margin-left: 3rem; */
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* input:hover{
+    margin: 1rem;
+    /* margin-left: -3rem; 
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
@@ -334,7 +423,7 @@ input:hover{
 
 input{
     margin: 1rem;
-    /* margin-left: -3rem; */
+    /* margin-left: -3rem; 
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
@@ -342,9 +431,67 @@ input{
     padding: 10px;
     cursor: pointer;
     outline: none;
+} */
+
+
+.inputs{
+    width: 400px;
+    margin: 1rem;
+    margin-left: -3rem;
+    margin-right: -5rem;   
+    background-color: transparent;
+    border : transparent;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    cursor: text;
+    outline: none;
 }
 
+.inputs:hover{
+    width: 400px;
+    margin: 1rem;
+    margin-left: -3rem;
+    margin-right: -5rem;   
+    background-color: transparent;
+    border : transparent;
+    border-bottom : 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px;
+    cursor: text;
+    outline: none;
+}
 
+.buscar{
+    display: flex;
+}
+
+.box{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.box input.inputs{
+    padding: 9px 9px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background:  rgba(255, 255, 255, 0.2) url(../img/buscar.png) no-repeat 9px center;  
+    backdrop-filter: blur(20px);
+    width: 500px;
+    transition: all .5s; 
+
+}
+
+.box input.inputs:hover{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border-color: #000; */
+    box-shadow: 0 0 5px #fff;
+}
 
 /* select{
     margin: 1rem;

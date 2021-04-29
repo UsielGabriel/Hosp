@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/negroes.png">
+    <link rel="stylesheet" href="  CSS/estilos-largos2.css">
+    <link rel="stylesheet" href="CSS/salectbox.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Hosp</title>
+</head>
+<body>
+    <div class="contenedor-cabeza">
+        <div class="cabeza-top">
+            <div class="imagen">
+                <img class="img" src="img/logo/blancoes.png" alt="Logotipo">
+            </div>
+            <div class="titulo">
+                <h1>Médico</h1>
+            </div> 
+            <div class="barras">
+                <input type="checkbox" id="hamburguesa">
+                <label for="hamburguesa" class=" label_menu menu_boton_bars">
+                    <span id="span_1"></span>
+                    <span id="span_2"></span>
+                    <span id="span_3"></span>  
+                </label>  
+            </div>                                             
+        </div>          
+    </div>
+    <div class="cabeza-bottom mostrar ">
+        <div class="menu">
+            <div>
+                <a href="registro.html">Registro</a><br>
+            </div>
+            <div>
+                <a href="registromedicopacientebuscar.html" class="boton-n">Registro Medico del paciente</a><br>
+            </div>              
+            <div>
+                <a href="buscaractualizarpaciente.html">Actualizar Registro Médico del paciente</a><br>
+            </div>
+            <div>
+                <a href="cerrar-sesion.html">Cerrar sesión</a><br>
+            </div>
+        </div>
+    </div>
+    <div class="buscar">
+        <div class="box">
+            <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busca a otro paciente " class="inputs"  
+            name="buscarpaciente" onkeypress="return validar(event)">
+        </div>
+        <div class="btn-buscar">
+            <input readonly class="btn" type="button" value="Buscar" onclick="buscar()" >
+        </div>
+    </div>
+    <div class="contenedor-contenido">
+        <div class="contenido">
+            <h3>Registro Medico del Paciente</h3>
+        </div>
+        <div class="contenido">
+            <form class="formulario" method="get" name="formulario" action="registrodeunmedico.html">                  
+                <div class="perfil-img">
+                    <img class="imgperf" src="" alt="Foto de perfil del paciente">
+                </div> 
+                <div class="formulario-top">                  
+                    <div class="formulario-n">
+                        <div>
+                            <p>Id del paciente:</p>
+                        </div>  
+                        <div>
+                            <input  readonly type="text"  class="inputs"  name="nombrecompleto"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                  
+                    <div class="formulario-n">
+                        <div>
+                            <p>Nombre:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name="nombrecompleto"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Edad:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name="edad"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Sexo:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name="sexo"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Grupo Sanguineo:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text" class="inputs"  name="gruposan"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Fecha de ultimo examen Médico</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text" class="inputs"  name="fechaulexa"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Ultimas prubas y analisis de cribado:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name="cedula"
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div> 
+                    <div class="formulario-n">
+                        <div>
+                            <p>Principales enfermedades y cirugias que a tenido:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Fechas de las lesiones que ha tenido:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div> 
+                              
+                    <div class="formulario-n">
+                        <div>
+                            <p>Enfermedades por la que ha recibido tratamiento:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>             
+                    <div class="formulario-n">
+                        <div>
+                            <p>Alergias:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                            
+                    <div class="formulario-n">
+                        <div>
+                            <p>Antecedentes de enfermedades en su familia:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div> 
+                    <div class="formulario-n">
+                        <div>
+                            <p>Lista de todos los medicamentos, las dosis y <br>
+                                cuanto tiempo los a estado tomando:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>             
+                    <div class="formulario-n">
+                        <div>
+                            <p>Enfermedades crónicas:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                            
+                    <div class="formulario-n">
+                        <div>
+                            <p>Contacto de emergencia:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>
+                    <div class="formulario-n">
+                        <div>
+                            <p>Número telefonico:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>             
+                    <div class="formulario-n">
+                        <div>
+                            <p>Dirrección:</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>                            
+                    <div class="formulario-n">
+                        <div>
+                            <p>Correo electronico</p>
+                        </div>  
+                        <div>
+                            <input readonly type="text"  class="inputs"  name=""
+                            onkeypress="return validar(event)">
+                        </div> 
+                    </div>       
+                </div>
+                <!-- <div class="boton">
+                    <div>
+                        <input readonly class="btn" type="button" value="Registrar" onclick="registrar()" >
+                    </div>
+                </div>                -->
+            </form>       
+        </div>
+    </div>
+    <div class="contenedor-pie">
+        <div class="pie-top">
+            <h3>El pie de pagina</h3>
+        </div>
+    </div> 
+    <script src="JS/menu.js"></script>   
+    <script src="JS/busregispaciente.js"></script>   
+</body>
+</html>
