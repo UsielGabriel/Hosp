@@ -1,4 +1,4 @@
-    *{
+*{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
@@ -356,6 +356,7 @@ body{
 
 .btn:hover{
     margin: 1rem;
+    margin-top: 6rem;
     /* margin-left: -3rem; */
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -368,6 +369,7 @@ body{
 
 .btn{
     margin: 1rem;
+    margin-top: 6rem;
     /* margin-left: -3rem; */
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
